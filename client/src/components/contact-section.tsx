@@ -92,7 +92,7 @@ export default function ContactSection() {
  const downloadResume = async () => {
     try {
       // Open the Google Drive link in a new tab
-      window.open("https://drive.google.com/file/d/1x0lqHt_uCYITEKiU2uJnsaAqpc1SYtQp/view?usp=sharing", "_blank");
+      window.open("https://drive.google.com/file/d/1XOu8mQWJTgNUn4ZNB8x7JRV1VCU-upRl/view?usp=sharing", "_blank");
 
       // Show success toast message
       toast({
