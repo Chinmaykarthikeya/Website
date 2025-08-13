@@ -1,0 +1,659 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinmay Karthikeya - Data Analyst Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'data-blue': '#2563eb',
+                        'data-green': '#10b981',
+                        'accent-blue': '#3b82f6',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-inter bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <!-- @COMPONENT: Navigation [sticky header with smooth scroll links] -->
+    <nav class="fixed top-0 w-full bg-white shadow-lg z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-data-blue">
+                    Chinmay Karthikeya
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-data-blue transition-colors duration-300">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-data-blue transition-colors duration-300">About</a>
+                    <a href="#skills" class="text-gray-700 hover:text-data-blue transition-colors duration-300">Skills</a>
+                    <a href="#projects" class="text-gray-700 hover:text-data-blue transition-colors duration-300">Projects</a>
+                    <a href="#contact" class="text-gray-700 hover:text-data-blue transition-colors duration-300">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700 hover:text-data-blue" data-event="click:toggleMobileMenu">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- Hero Section -->
+    <!-- @COMPONENT: HeroSection [professional introduction with CTA] -->
+    <section id="home" class="pt-20 pb-16 bg-gradient-to-br from-data-blue to-accent-blue text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        Hi, I'm <span class="text-yellow-300">Chinmay Karthikeya</span>
+                    </h1>
+                    <h2 class="text-xl md:text-2xl font-medium mb-6 text-blue-100">
+                        Aspiring Data Analyst & ECE Engineer
+                    </h2>
+                    <p class="text-lg mb-8 text-blue-100 max-w-2xl">
+                        Turning data into decisions, one visualization at a time. Passionate about transforming complex datasets into actionable insights that drive business growth.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#projects" class="bg-data-green hover:bg-green-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                            View My Work
+                        </a>
+                        <a href="#contact" class="border-2 border-white text-white hover:bg-white hover:text-data-blue px-8 py-3 rounded-lg font-semibold transition-all duration-300">
+                            Hire Me
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <!-- Professional headshot placeholder -->
+                    <!-- A professional headshot of a young data analyst in business attire with a confident smile -->
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&h=600" 
+                         alt="Chinmay Karthikeya - Data Analyst" 
+                         class="rounded-2xl shadow-2xl w-80 h-96 object-cover mx-auto border-4 border-white" />
+                    <div class="mt-6 flex justify-center space-x-4">
+                        <a href="https://www.linkedin.com/in/chinmaykarthikeya" target="_blank" class="text-white hover:text-yellow-300 transition-colors duration-300">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="https://github.com/ChinmayKarthikeya" target="_blank" class="text-white hover:text-yellow-300 transition-colors duration-300">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="mailto:karthikeyachinmay@gmail.com" class="text-white hover:text-yellow-300 transition-colors duration-300">
+                            <i class="fas fa-envelope text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: HeroSection -->
+
+    <!-- About Section -->
+    <!-- @COMPONENT: AboutSection [professional summary and achievements] -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Data Analytics-Focused ECE Engineer with a passion for extracting meaningful insights from complex datasets
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <!-- A modern data analytics workspace with multiple monitors showing charts and graphs -->
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                         alt="Data Analytics Workspace" 
+                         class="rounded-xl shadow-lg w-full h-auto" />
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-gray-900">
+                        Electronics & Communication Engineering Graduate
+                    </h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        I am an Electronics and Communication Engineering (ECE) graduate based in Hyderabad with a keen interest in data analytics. My journey combines technical engineering expertise with the power of data science to solve real-world problems.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <div class="text-data-blue mb-2">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-900">Location</h4>
+                            <p class="text-gray-600">Hyderabad, India</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <div class="text-data-green mb-2">
+                                <i class="fas fa-graduation-cap text-xl"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-900">Education</h4>
+                            <p class="text-gray-600">B.Tech ECE</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-data-blue">
+                        <h4 class="font-semibold text-gray-900 mb-2">Career Goal</h4>
+                        <p class="text-gray-700">
+                            Actively seeking roles as a <strong>Data Analyst</strong> where I can create impact through data-driven strategies and help organizations make smarter decisions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: AboutSection -->
+
+    <!-- Skills Section -->
+    <!-- @COMPONENT: SkillsSection [technology badges and competencies] -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Tech Toolbox</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive skill set spanning data analysis, visualization, and business intelligence
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="text-data-blue mb-4">
+                        <i class="fas fa-code text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Programming & Analysis</h3>
+                    <div class="space-y-3">
+                        <span class="inline-block bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold">Python</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold ml-2">Pandas</span>
+                        <span class="inline-block bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-semibold">NumPy</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="text-data-green mb-4">
+                        <i class="fas fa-chart-bar text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Data Visualization</h3>
+                    <div class="space-y-3">
+                        <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">Seaborn</span>
+                        <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold ml-2">Matplotlib</span>
+                        <span class="inline-block bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-semibold">Streamlit</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="text-accent-blue mb-4">
+                        <i class="fas fa-database text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Business Intelligence</h3>
+                    <div class="space-y-3">
+                        <span class="inline-block bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold">Power BI</span>
+                        <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold ml-2">Excel</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">SQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">What I Do</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center p-4">
+                        <div class="text-data-blue mb-3">
+                            <i class="fas fa-broom text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Data Cleaning</h4>
+                        <p class="text-gray-600 text-sm">Clean and preprocess data for better clarity and insights</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-data-green mb-3">
+                            <i class="fas fa-chart-line text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Dashboard Creation</h4>
+                        <p class="text-gray-600 text-sm">Build interactive dashboards using Power BI and Streamlit</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-accent-blue mb-3">
+                            <i class="fas fa-chart-area text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Data Visualization</h4>
+                        <p class="text-gray-600 text-sm">Visualize trends with Seaborn and Matplotlib</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-purple-600 mb-3">
+                            <i class="fas fa-brain text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Insights Generation</h4>
+                        <p class="text-gray-600 text-sm">Derive meaningful insights for smarter decisions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: SkillsSection -->
+
+    <!-- Projects Section -->
+    <!-- @COMPONENT: ProjectsSection [featured projects with descriptions and links] -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Real-world data analysis projects showcasing end-to-end analytical capabilities
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Diwali Sales Analysis Project -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <!-- Dashboard visualization showing colorful Diwali sales charts and graphs -->
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Diwali Sales Analysis Dashboard" 
+                         class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-chart-pie text-data-blue mr-2"></i>
+                            <h3 class="text-xl font-bold text-gray-900">Diwali Sales Analysis</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Comprehensive analysis of Diwali festival sales data to identify customer behavior patterns, top-selling products, and regional preferences using Python and visualization libraries.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-semibold">Python</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-semibold">Pandas</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Seaborn</span>
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs font-semibold">Matplotlib</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="https://github.com/ChinmayKarthikeya/ChinmayKarthikeya/tree/main/Diwali_Sales_Analysis" target="_blank" class="text-data-blue hover:text-blue-700 font-semibold">
+                                <i class="fab fa-github mr-1"></i>View Code
+                            </a>
+                            <span class="text-gray-500 text-sm">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Netflix Content Analysis Project -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <!-- Netflix-style data visualization with red and black color scheme -->
+                    <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Netflix Content Analysis Visualization" 
+                         class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-video text-red-600 mr-2"></i>
+                            <h3 class="text-xl font-bold text-gray-900">Netflix Content Analysis</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Deep dive into Netflix's content library analyzing genres, release patterns, ratings, and regional content distribution to understand streaming platform strategies.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-semibold">Python</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-semibold">Pandas</span>
+                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs font-semibold">NumPy</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Visualization</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="https://github.com/ChinmayKarthikeya/ChinmayKarthikeya/tree/main/Netflix-Content-Data%20Analysis" target="_blank" class="text-data-blue hover:text-blue-700 font-semibold">
+                                <i class="fab fa-github mr-1"></i>View Code
+                            </a>
+                            <span class="text-gray-500 text-sm">Content Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zepto Project -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <!-- E-commerce analytics dashboard with delivery and sales metrics -->
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Zepto E-commerce Analytics" 
+                         class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-shopping-cart text-data-green mr-2"></i>
+                            <h3 class="text-xl font-bold text-gray-900">Zepto Project Analysis</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Analysis of quick commerce delivery patterns, customer ordering behavior, and operational efficiency metrics for the fast-growing grocery delivery platform.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs font-semibold">Streamlit</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-semibold">Power BI</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-semibold">Business Analytics</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="https://github.com/ChinmayKarthikeya/ChinmayKarthikeya/tree/main/Zepto_project" target="_blank" class="text-data-blue hover:text-blue-700 font-semibold">
+                                <i class="fab fa-github mr-1"></i>View Code
+                            </a>
+                            <span class="text-gray-500 text-sm">Business Intelligence</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Cleaning Project -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <!-- Data cleaning process visualization with before/after comparison -->
+                    <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Data Cleaning and EDA Process" 
+                         class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-broom text-purple-600 mr-2"></i>
+                            <h3 class="text-xl font-bold text-gray-900">Data Cleaning & EDA</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Comprehensive data cleaning and exploratory data analysis project showcasing techniques for handling missing values, outliers, and data quality issues.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs font-semibold">NumPy</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-semibold">Pandas</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">EDA</span>
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs font-semibold">Data Quality</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="https://github.com/ChinmayKarthikeya/ChinmayKarthikeya/blob/main/DataCleaningProject1.ipynb" target="_blank" class="text-data-blue hover:text-blue-700 font-semibold">
+                                <i class="fab fa-github mr-1"></i>View Code
+                            </a>
+                            <span class="text-gray-500 text-sm">Data Preprocessing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="https://github.com/ChinmayKarthikeya" target="_blank" class="bg-data-blue hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                    <i class="fab fa-github mr-2"></i>View All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: ProjectsSection -->
+
+    <!-- Testimonials Section -->
+    <!-- @COMPONENT: TestimonialsSection [professional recommendations] -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Professional Impact</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Recognition for analytical excellence and data-driven insights
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-data-blue rounded-full flex items-center justify-center text-white font-bold">
+                            DR
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900" data-mock="true">Dr. Rajesh Kumar</h4>
+                            <p class="text-gray-600 text-sm" data-mock="true">Academic Supervisor</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic" data-mock="true">
+                        "Chinmay demonstrates exceptional analytical thinking and attention to detail in data projects. His ability to translate complex data into actionable insights is remarkable."
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-data-green rounded-full flex items-center justify-center text-white font-bold">
+                            PS
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900" data-mock="true">Priya Sharma</h4>
+                            <p class="text-gray-600 text-sm" data-mock="true">Project Collaborator</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic" data-mock="true">
+                        "Working with Chinmay on data visualization projects has been incredibly productive. His Python skills and dashboard creation abilities are outstanding."
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent-blue rounded-full flex items-center justify-center text-white font-bold">
+                            AS
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900" data-mock="true">Arun Singh</h4>
+                            <p class="text-gray-600 text-sm" data-mock="true">Industry Mentor</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic" data-mock="true">
+                        "Chinmay's approach to data cleaning and EDA is methodical and thorough. He would be a valuable addition to any data analytics team."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: TestimonialsSection -->
+
+    <!-- Contact Section -->
+    <!-- @COMPONENT: ContactSection [contact form and information] -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Let's Connect</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ready to contribute to your data analytics team. Let's discuss how I can help drive your business forward.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Get In Touch</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="bg-data-blue text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Email</h4>
+                                <a href="mailto:karthikeyachinmay@gmail.com" class="text-data-blue hover:text-blue-700">
+                                    karthikeyachinmay@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="bg-data-green text-white p-3 rounded-lg mr-4">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/chinmaykarthikeya" target="_blank" class="text-data-blue hover:text-blue-700">
+                                    linkedin.com/in/chinmaykarthikeya
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="bg-gray-800 text-white p-3 rounded-lg mr-4">
+                                <i class="fab fa-github text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">GitHub</h4>
+                                <a href="https://github.com/ChinmayKarthikeya" target="_blank" class="text-data-blue hover:text-blue-700">
+                                    github.com/ChinmayKarthikeya
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="bg-accent-blue text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Location</h4>
+                                <p class="text-gray-600">Hyderabad, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-6 bg-blue-50 rounded-lg border-l-4 border-data-blue">
+                        <h4 class="font-semibold text-gray-900 mb-2">Download Resume</h4>
+                        <p class="text-gray-700 mb-4">Get my complete professional profile and project details</p>
+                        <button class="bg-data-blue hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors duration-300" data-event="click:downloadResume">
+                            <i class="fas fa-download mr-2"></i>Download CV
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <form class="bg-gray-50 p-8 rounded-xl shadow-lg" data-event="submit:handleContactForm">
+                        <!-- @STATE: formData:object = {name: '', email: '', company: '', message: ''} -->
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Send Message</h3>
+                        
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name *</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-data-blue focus:border-transparent transition-all duration-300"
+                                   placeholder="Your full name" data-bind="formData.name">
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-data-blue focus:border-transparent transition-all duration-300"
+                                   placeholder="your.email@company.com" data-bind="formData.email">
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="company" class="block text-gray-700 font-semibold mb-2">Company</label>
+                            <input type="text" id="company" name="company" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-data-blue focus:border-transparent transition-all duration-300"
+                                   placeholder="Your company name" data-bind="formData.company">
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-semibold mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="4" required 
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-data-blue focus:border-transparent transition-all duration-300"
+                                      placeholder="Tell me about the opportunity or project..." data-bind="formData.message"></textarea>
+                        </div>
+
+                        <button type="submit" 
+                                class="w-full bg-data-blue hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: ContactSection -->
+
+    <!-- Footer -->
+    <!-- @COMPONENT: Footer [copyright and additional links] -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Chinmay Karthikeya</h3>
+                    <p class="text-gray-400 mb-4">
+                        Data Analytics-Focused ECE Engineer passionate about turning data into actionable insights.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/chinmaykarthikeya" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://github.com/ChinmayKarthikeya" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="mailto:karthikeyachinmay@gmail.com" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="#about" class="block text-gray-400 hover:text-white transition-colors duration-300">About</a>
+                        <a href="#skills" class="block text-gray-400 hover:text-white transition-colors duration-300">Skills</a>
+                        <a href="#projects" class="block text-gray-400 hover:text-white transition-colors duration-300">Projects</a>
+                        <a href="#contact" class="block text-gray-400 hover:text-white transition-colors duration-300">Contact</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Professional Quote</h4>
+                    <blockquote class="text-gray-400 italic">
+                        "Without data, you're just another person with an opinion."
+                        <br><span class="text-sm">– W. Edwards Deming</span>
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2024 Chinmay Karthikeya. All rights reserved. | Built with passion for data analytics.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <!-- JavaScript -->
+    <script>
+        (function() {
+            // TODO: Implement smooth scrolling navigation
+            // TODO: Implement mobile menu toggle functionality
+            // TODO: Implement contact form submission with validation
+            // TODO: Implement resume download functionality
+            // TODO: Add analytics tracking for recruiter interactions
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Navbar scroll effect
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('nav');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('bg-white', 'shadow-lg');
+                } else {
+                    navbar.classList.remove('bg-white', 'shadow-lg');
+                }
+            });
+
+            // Form submission placeholder
+            const contactForm = document.querySelector('form[data-event="submit:handleContactForm"]');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // TODO: Implement actual form submission logic
+                    alert('Thank you for your message! I will get back to you soon.');
+                });
+            }
+
+            // Resume download placeholder
+            const downloadBtn = document.querySelector('button[data-event="click:downloadResume"]');
+            if (downloadBtn) {
+                downloadBtn.addEventListener('click', function() {
+                    // TODO: Implement actual resume download
+                    alert('Resume download will be implemented with actual PDF file.');
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
