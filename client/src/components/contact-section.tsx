@@ -91,11 +91,13 @@ export default function ContactSection() {
 
  const downloadResume = async () => {
     try {
-      const response = await apiRequest("GET", "/api/resume");
-      const data = await response.json();
+      // Open the Google Drive link in a new tab
+      window.open("https://drive.google.com/file/d/1x0lqHt_uCYITEKiU2uJnsaAqpc1SYtQp/view?usp=sharing", "_blank");
+
+      // Show success toast message
       toast({
         title: "Resume Download",
-        description: data.message,
+        description: "Your resume download has started in a new tab.",
       });
     } catch (error) {
       toast({
