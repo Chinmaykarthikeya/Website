@@ -118,7 +118,7 @@ export default function ContactSection() {
       icon: <Mail className="text-xl" />,
       title: "Email",
       content: "karthikeyachinmay@gmail.com",
-      href: "mailto:karthikeyachinmay@gmail.com",
+      href: "https://mail.google.com/mail/?view=cm&to=karthikeyachinmay@gmail.com",
       bgColor: "bg-data-primary"
     },
     {

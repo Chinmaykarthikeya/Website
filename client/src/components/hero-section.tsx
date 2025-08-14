@@ -83,7 +83,7 @@ export default function HeroSection() {
                 <Github size={32} />
               </a>
               <a
-                href="mailto:karthikeyachinmay@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&to=karthikeyachinmay@gmail.com"
                 className="text-white hover:text-yellow-300 transition-colors duration-300"
               >
                 <Mail size={32} />
